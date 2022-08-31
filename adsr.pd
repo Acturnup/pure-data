@@ -1,0 +1,20 @@
+#N canvas 23 197 1052 673 12;
+#X obj 129 172 *~;
+#X obj 303 27 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000
+#000000;
+#X obj 279 188 vline~;
+#X obj 129 291 output~;
+#X text 291 109 attack 1 500;
+#X text 349 94 release 0 500;
+#X msg 296 65 1 500 \, 0 500 3000;
+#X text 419 93 sustain 3000;
+#X obj 132 42 osc~ 350;
+#X text 344 189 deluxe line;
+#X text 65 19 cosine oscillator;
+#X text 358 20 bang;
+#X connect 0 0 3 0;
+#X connect 0 0 3 1;
+#X connect 1 0 6 0;
+#X connect 2 0 0 1;
+#X connect 6 0 2 0;
+#X connect 8 0 0 0;

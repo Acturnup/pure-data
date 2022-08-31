@@ -1,0 +1,59 @@
+#N canvas 43 37 1268 653 12;
+#X obj 165 347 lop~;
+#X obj 164 420 *~ 0.25;
+#X obj 166 289 noise~;
+#X floatatom 283 289 5 0 0 0 - - - 0;
+#X obj 78 414 vsl 15 128 0 1 0 0 empty empty empty 0 -9 0 10 #faff00
+#000000 #000000 0 1;
+#X obj 315 390 vsl 15 128 0 3000 0 0 empty empty empty 0 -9 0 10 #ff0400
+#000000 #000000 0 1;
+#X obj 161 516 dac~;
+#X obj 575 401 *~ 0.25;
+#X obj 577 270 noise~;
+#X floatatom 694 270 5 0 0 0 - - - 0;
+#X obj 489 395 vsl 15 128 0 1 0 0 empty empty empty 0 -9 0 10 #faff00
+#000000 #000000 0 1;
+#X obj 726 371 vsl 15 128 0 3000 0 0 empty empty empty 0 -9 0 10 #ff0400
+#000000 #000000 0 1;
+#X obj 572 497 dac~;
+#X obj 576 328 hip~;
+#X obj 930 388 *~ 0.25;
+#X obj 932 257 noise~;
+#X floatatom 1049 257 5 0 0 0 - - - 0;
+#X obj 852 360 vsl 15 128 0 1 0 0 empty empty empty 0 -9 0 10 #faff00
+#000000 #000000 0 1;
+#X obj 1081 358 vsl 15 128 0 3000 0 0 empty empty empty 0 -9 0 10 #ff0400
+#000000 #000000 0 1;
+#X obj 931 315 bp~ 220 1;
+#X floatatom 1133 256 5 0 0 0 - - - 0;
+#X obj 1165 357 vsl 15 128 0 10 0 0 empty empty empty 0 -9 0 10 #00ff04
+#000000 #000000 0 1;
+#X text 1117 200 controls bandwidth;
+#X text 1005 230 center frenqency;
+#X obj 925 492 output~;
+#X text 133 233 one pole low pass filter;
+#X text 558 223 one-pole high pass filter;
+#X text 861 213 2-pole bandpass filter;
+#X connect 0 0 1 0;
+#X connect 1 0 6 0;
+#X connect 1 0 6 1;
+#X connect 2 0 0 0;
+#X connect 3 0 0 1;
+#X connect 4 0 1 1;
+#X connect 5 0 3 0;
+#X connect 7 0 12 0;
+#X connect 7 0 12 1;
+#X connect 8 0 13 0;
+#X connect 9 0 13 1;
+#X connect 10 0 7 1;
+#X connect 11 0 9 0;
+#X connect 13 0 7 0;
+#X connect 14 0 24 0;
+#X connect 14 0 24 1;
+#X connect 15 0 19 0;
+#X connect 16 0 19 1;
+#X connect 17 0 14 1;
+#X connect 18 0 16 0;
+#X connect 19 0 14 0;
+#X connect 20 0 19 2;
+#X connect 21 0 20 0;
